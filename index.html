@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Hotel</title>
+    <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            * {box-sizing: border-box;}
+            
+           
+            
+            /* Position the navbar container inside the image */
+            .container {
+              position: absolute;
+              margin: 20px;
+              width: auto;
+            }
+            
+            /* The navbar */
+            .topnav {
+              overflow: hidden;
+              background-color: #333;
+            }
+            
+            /* Navbar links */
+            .topnav a {
+              float: left;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+            
+            .topnav a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+            </style>
+
+</head>
+<body>
+        <div class="bg-img">
+                <div class="container">
+                  <div class="topnav">
+                    <a href="#home"><strong>INICIO</strong></a>
+                    <a href="#news"><strong>RESERVACIONES</strong></a>
+                    <a href="#contact"><strong>CONTACTO</strong></a>
+                    <a href="#about"><strong>SERVICIOS</strong></a>
+                  </div>
+                </div>
+              </div>
+
+    <div class="section">
+        <div class="moving-image"></div>
+        <div class="shadow-title">Hotel Maria</div>
+        <ul class="case-study-wrapper">
+            <li class="case-study-name">                            	
+                <a href="#" class="hover-target">tanya</a>
+            </li>
+            <li class="case-study-name">                                         	
+                <a href="#" class="hover-target">helen</a>
+            </li>
+            <li class="case-study-name">                                        	
+                <a href="#" class="hover-target">andrea</a>
+            </li>
+            <li class="case-study-name">                                         	
+                <a href="#" class="hover-target">diana</a>
+            </li>
+        </ul>
+
+        <ul class="case-study-images">
+            <li>
+                <img src="https://ivang-design.com/svg-load/hotel/room1.jpg" alt="">          	
+                <p>Apartamento Tanya</p>
+                <div class="info">
+                    <img src="https://ivang-design.com/svg-load/hotel/1.svg" alt=""> 	
+                    <img src="https://ivang-design.com/svg-load/hotel/2.svg" alt=""> 
+                    <img src="https://ivang-design.com/svg-load/hotel/3.svg" alt=""> 
+                    <img src="https://ivang-design.com/svg-load/hotel/5.svg" alt=""> 
+                    <a href="#" class="hover-target">Mas información</a>
+                </div>
+            </li>
+            <li>
+                <img src="https://ivang-design.com/svg-load/hotel/room2.jpg" alt="">       	
+                <p>Apartamento Helen</p>
+                <div class="info">
+                    <img src="https://ivang-design.com/svg-load/hotel/1.svg" alt=""> 	
+                    <img src="https://ivang-design.com/svg-load/hotel/2.svg" alt=""> 
+                    <img src="https://ivang-design.com/svg-load/hotel/3.svg" alt=""> 
+                    <img src="https://ivang-design.com/svg-load/hotel/4.svg" alt=""> 
+                    <img src="https://ivang-design.com/svg-load/hotel/6.svg" alt=""> 
+                    <a href="#" class="hover-target">full info</a>
+                </div>
+            </li>
+            <li>
+                <img src="https://ivang-design.com/svg-load/hotel/room3.jpg" alt="">       	
+                <p>Apartamento Andrea</p>
+                <div class="info">	
+                    <img src="https://ivang-design.com/svg-load/hotel/2.svg" alt=""> 
+                    <img src="https://ivang-design.com/svg-load/hotel/3.svg" alt=""> 
+                    <img src="https://ivang-design.com/svg-load/hotel/4.svg" alt=""> 
+                    <img src="https://ivang-design.com/svg-load/hotel/5.svg" alt=""> 
+                    <a href="#" class="hover-target">full info</a>
+                </div>
+            </li>
+            <li>
+                <img src="https://ivang-design.com/svg-load/hotel/room4.jpg" alt="">       	
+                <p>Apartamento Diana</p>
+                <div class="info">
+                    <img src="https://ivang-design.com/svg-load/hotel/1.svg" alt=""> 	
+                    <img src="https://ivang-design.com/svg-load/hotel/2.svg" alt=""> 
+                    <img src="https://ivang-design.com/svg-load/hotel/3.svg" alt=""> 
+                    <img src="https://ivang-design.com/svg-load/hotel/4.svg" alt=""> 
+                    <img src="https://ivang-design.com/svg-load/hotel/6.svg" alt=""> 
+                    <a href="#" class="hover-target">full info</a>
+                </div>
+            </li>
+        </ul>				
+    </div>
+    
+    <!-- Page cursor
+    ================================================== -->
+    
+    <div class='cursor' id="cursor"></div>
+    <div class='cursor2' id="cursor2"></div>
+    <div class='cursor3' id="cursor3"></div> 
+
+<!-- Link to page
+================================================== -->
+
+<a href="https://segundobartra.netlify.com/" class="link-to-portfolio hover-target" target="_blank"></a>
+
+
+<script>
+    /* Please ❤ this if you like it! */
+
+
+(function($) { "use strict";
+		
+        //Page cursors
+    
+        document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+            t.style.left = n.clientX + "px", 
+            t.style.top = n.clientY + "px", 
+            e.style.left = n.clientX + "px", 
+            e.style.top = n.clientY + "px", 
+            i.style.left = n.clientX + "px", 
+            i.style.top = n.clientY + "px"
+        });
+        var t = document.getElementById("cursor"),
+            e = document.getElementById("cursor2"),
+            i = document.getElementById("cursor3");
+        function n(t) {
+            e.classList.add("hover"), i.classList.add("hover")
+        }
+        function s(t) {
+            e.classList.remove("hover"), i.classList.remove("hover")
+        }
+        s();
+        for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
+            o(r[a])
+        }
+        function o(t) {
+            t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+        }
+        
+        var pos = 0;
+                window.setInterval(function(){
+                    pos++;
+                    document.getElementsByClassName('moving-image')[0].style.backgroundPosition = pos + "px 0px";
+                }, 18
+            );
+        
+        $(document).ready(function() {			
+            
+            $('.case-study-name:nth-child(1)').on('mouseenter', function() {
+                $('.case-study-name.active').removeClass('active');
+                $('.case-study-images li.show').removeClass("show");
+                $('.case-study-images li:nth-child(1)').addClass("show");
+                $('.case-study-name:nth-child(1)').addClass('active');
+            })
+            $('.case-study-name:nth-child(2)').on('mouseenter', function() {
+                $('.case-study-name.active').removeClass('active');
+                $('.case-study-images li.show').removeClass("show");
+                $('.case-study-images li:nth-child(2)').addClass("show");
+                $('.case-study-name:nth-child(2)').addClass('active');
+            })
+            $('.case-study-name:nth-child(3)').on('mouseenter', function() {
+                $('.case-study-name.active').removeClass('active');
+                $('.case-study-images li.show').removeClass("show");
+                $('.case-study-images li:nth-child(3)').addClass("show");
+                $('.case-study-name:nth-child(3)').addClass('active');
+            })
+            $('.case-study-name:nth-child(4)').on('mouseenter', function() {
+                $('.case-study-name.active').removeClass('active');
+                $('.case-study-images li.show').removeClass("show");
+                $('.case-study-images li:nth-child(4)').addClass("show");
+                $('.case-study-name:nth-child(4)').addClass('active');
+            })
+            $('.case-study-name:nth-child(1)').trigger('mouseenter')
+                        
+        });
+        
+        
+        
+      })(jQuery); 
+</script>
+
+</body>
+</html>
